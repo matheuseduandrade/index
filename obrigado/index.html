@@ -1,81 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mensagem Enviada</title>
   <style>
-    :root {
-      --bg-light: #f0f0f0;
-      --text-light: #222;
-      --bg-dark: #1e1e1e;
-      --text-dark: #f5f5f5;
-      --accent: #4caf50;
-    }
-
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
+      background: url(https://www.univates.br/blog//wp-content/uploads/2024/07/Imagens-posts-blog-47-1920x1280.jpg);
+      font-family: Arial, sans-serif;
       display: flex;
-      align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      background-color: var(--bg-light);
-      color: var(--text-light);
-      text-align: center;
-      padding: 2rem;
-      transition: all 0.3s ease;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: var(--bg-dark);
-        color: var(--text-dark);
-      }
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
 
     .container {
-      max-width: 500px;
-      padding: 2rem;
-      border-radius: 20px;
-      background-color: rgba(255, 255, 255, 0.05);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background-color: rgba(194, 194, 194, 0.8);
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.445);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .icon {
+      font-size: 48px;
+      color: #00c807;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 2.5rem;
-      color: var(--accent);
-      margin-bottom: 1rem;
+      font-size: 24px;
+      color: #141313;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
+      color: #2c2c2c;
+      font-size: 18px;
+      line-height: 1.5;
     }
 
-    a {
+    .button {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #1e1e1e;
+      color: #ffffff;
       text-decoration: none;
-      background-color: var(--accent);
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: 12px;
+      border-radius: 8px;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s;
     }
 
-    a:hover {
+    .button:hover {
       background-color: #43a047;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Obrigado! 💌</h1>
-    <p>Sua mensagem foi enviada com sucesso. Em breve entrarei em contato com você.</p>
-    <a href="index.html">Voltar para o início</a>
+    <div class="icon">✅</div>
+    <h1>Mensagem enviada com sucesso!</h1>
+    <p>Sua mensagem foi enviada com sucesso.<br>Em breve entrarei em contato com você.</p>
+    <a href="javascript:history.back()" class="button">Voltar para o início</a>
   </div>
 </body>
 </html>
